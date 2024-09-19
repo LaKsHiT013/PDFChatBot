@@ -1,0 +1,60 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Style for text input */
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+}
+
+/* Style for submit button */
+input.submit-btn {
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input.submit-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style for summarization button */
+button.summarize-btn {
+    background-color: #28a745; /* Green background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button.summarize-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Style for error messages */
+.error {
+    color: red;
+    margin: 10px 0;
+}

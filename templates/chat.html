@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Ask ME Anything!</h1>
+    
+    <!-- Form for asking questions -->
+    <form action="{{ url_for('chat') }}" method="post">
+        <input type="text" name="user_question" placeholder="Enter your question" required>
+        <input type="submit" value="Ask" class="submit-btn">
+    </form>
+    
+    <!-- Form for summarizing PDF -->
+    <form action="{{ url_for('chat') }}" method="post">
+        <input type="hidden" name="summarize" value="true">
+        <button class="summarize-btn" type="submit">Summarize PDF</button>
+    </form>
+
+    {% if response %}
+        <p>Response: {{ response }}</p>
+    {% endif %}
+</body>
+</html>

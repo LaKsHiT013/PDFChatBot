@@ -1,0 +1,7 @@
+Flask
+PyPDF2
+langchain
+google-generativeai
+langchain-google-genai
+pinecone-client
+python-dotenv
